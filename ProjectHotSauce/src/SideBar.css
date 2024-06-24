@@ -1,0 +1,54 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 200px;
+  border-radius: 16px;
+  background: #273B4A;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Adjusts space between header and menu */
+  z-index: 1000; /* Ensures it's above other content */
+}
+
+.sidebar-header {
+  text-align: center;
+  margin-bottom: 20px; /* Space between header and menu */
+}
+
+.headerLeft {
+  color: #fff; /* White color for 'North' */
+}
+
+.headerRight {
+  color: #F07C62; /* Red color for 'eastern' */
+}
+
+.sidebar-header h2 {
+  margin: 0;
+  color: #fff;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+
+.sidebar-menu li {
+  margin-bottom: 15px; /* Space between menu items */
+}
+
+.sidebar-menu li a {
+  text-decoration: none;
+  color: #A5A195;
+  font-weight: bold;
+}
+
+.sidebar-menu li a.active {
+  color: #64a7ee; /* Active link color */
+}

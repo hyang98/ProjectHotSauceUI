@@ -1,28 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import SideBar from './SideBar';  // Import Sidebar component
+//import './Dashboard.css';  // Import your dashboard CSS file
+
 const Dashboard = () => {
   return (
     <div className="dashboard-container">
       {/* Navbar */}
       <nav className="navbar">
-        <div className="navbar-brand">
-          <Link to="/" className="navbar-item">
-            Your Logo
-          </Link>
-        </div>
         {/* Add any additional navbar items or components here */}
       </nav>
 
       {/* Sidebar */}
-      <aside className="sidebar">
-        <ul>
-          <li><Link to="/sensors">Sensors</Link></li>
-          <li><Link to="/alerts">Alerts</Link></li>
-          <li><Link to="/download">Download Data</Link></li>
-          {/* Add more sidebar links as needed */}
-        </ul>
-      </aside>
+      <SideBar />
 
       {/* Main Content */}
       <main className="main-content">
